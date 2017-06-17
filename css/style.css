@@ -1,0 +1,277 @@
+@font-face {
+  font-family: Helvetica, Open Sans;
+  src: url(./font/Helvetica.dfont);
+  font-weight: normal;
+}
+
+p       { font-size: 1.3em }
+body    { font-family: 'Helvetica' ;margin-top: 0px;}
+.xmlogo { position: fixed; margin-top: 10px }
+.nav-bar {
+  background-color: none;
+  position: fixed;
+  z-index: 999;
+  height: 5vh;
+  width: 100%;
+  margin-left: -8px;
+  top: 0;
+}
+
+
+#why-me, #about { display: none }
+
+
+.nav         { float: right; margin-right: 5%; padding: 20px }
+.nav a       { text-decoration: none; color: grey }
+.nav a:hover { text-decoration: none; color: #99cc00 }
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
+  max-width: 1196px;
+  position: relative;
+  text-align: center;
+}
+
+#home    { position: relative }
+#home h1 {
+  font-size: 3em;
+  color: #58585b;
+  margin-top: 12vh;
+  font-weight: lighter;
+}
+
+#home h1 b{
+  font-size: 1em;
+  color: #99cc00;
+  margin-top: 9vh;
+  font-weight: bold;
+}
+
+#home h1 spam{
+  font-size: 1em;
+  color: black;
+  margin-top: 9vh;
+  font-weight: bold;
+}
+
+.height { height: 96vh }
+
+.home-desc  {
+  margin-top: 22vh;
+  background-color: #99cc00;
+  border-radius: 5px;
+  padding: 5%;
+  width: 50%;
+  transform: rotate(-7deg);
+  z-index: 100;
+  margin-left: 15%;
+  color: white!important;
+}
+
+#why-me {
+  position: relative;
+  margin-top: -15vh;
+ }
+
+.me {
+  transform: rotate(6deg);
+  z-index: 100;
+  margin-left: 15%;
+  background-color: #49545f;
+  width: 27%;
+  padding: 1px;
+  border-radius: 5px;
+  margin-left: 47%;
+  color: white;
+}
+
+.about-me {
+  transform: rotate(2deg);
+  margin-left: 15%;
+  background-color: #6766cc;
+  width: 88%;
+  padding: 7px;
+  border-radius: 24px;
+  margin-left: 10%;
+  position: relative;
+  margin-top: 8%;
+  border: 2px solid #929496
+}
+
+.about-me p { color: #FFFFFF!important; }
+.portfolio  { position: relative; margin-bottom: 5% }
+.rocket     { position: relative; padding-top: 6%; text-align: left }
+
+#rocket:after {
+  content: "\f135";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  font-size: 22em;
+  color: #58585b;
+  top: 50%;
+  left: 50%;
+  margin: -9% 0 0 -15%;
+  z-index: 1;
+  transform: rotate(32deg);
+}
+
+#fire {
+  border-radius: 15px 0px 0px 15px;
+  position: relative;
+  background: #36cbfd;
+  color: white;
+  text-align: right;
+  left: 10%;
+  bottom: -10vh;
+  padding: 3px;
+}
+
+.flame1 {
+  width: 13%;
+  margin-left: 9%;
+  transform: rotate(-13deg);
+  margin-bottom: 34px;
+}
+
+.flame2 {
+  width: 22%;
+  margin-left: 1%;
+  transform: rotate(-13deg);
+}
+
+.flame3 {
+  width: 18%;
+  margin-left: 5%;
+  transform: rotate(-13deg);
+}
+
+#logo {
+  float: right;
+  margin-top: -17%;
+  margin-right: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.click {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 999px;
+}
+
+#about  { position: relative; margin-top: 14vh }
+
+.about {
+  background-color: #6766cc;
+  width: 38%;
+  border-radius: 5px;
+  color: white;
+  transform: rotate(-5deg);
+  margin-left: 43%;
+  margin-bottom: 5%;
+  padding: 14px 1px 1px 1px
+}
+
+.about-desc1 {
+  background-color: #99cc00;
+  padding: 1%;
+  color: #fafafa;
+  border-radius: 10px;
+  transform: rotate(5deg);
+  margin-left: 6%;
+  margin-bottom: 5%;
+  width: 90%;
+}
+
+.about-desc2 {
+  background-color: #49545f;
+  padding: 1%;
+  color: #ffffff;
+  border-radius: 20px;
+  transform: rotate(-4deg);
+  margin-left: 25%;
+  margin-bottom: 5%;
+  width: 63%;
+}
+
+.row {
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+  padding: 1px;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.row p {
+  font-size: 0.75em !important;
+}
+.heart {
+  color: red;
+}
+
+/**/
+
+
+@media (min-width:320px) and (max-width:479px) {
+  .logob   { width: 66px }
+  .nav-bar { display: none }
+  #home h1 { font-size: 2em}
+  #why-me { margin-top: 7vh }
+
+  .home-desc {
+    margin-top: 8vh;
+    border-radius: 5px;
+     padding: 0%;
+    width: 80%;
+    transform: rotate(0deg);
+    z-index: 100;
+    margin-left: 5%;
+  }
+
+  .me           { width: 47% }
+  .about-me     { margin-left: 5% }
+  .rocket       { padding-top: 0% }
+  #rocket:after { font-size: 11em; margin: 48% 0 0 -27%; transform: rotate(-225deg) }
+  #logo         { float: right; margin-top: 81% }
+  #fire         { border-radius: 15px; text-align: center }
+
+  .flame1 {
+    width: 75%;
+    margin-left: 0%;
+    transform: rotate(-5deg);
+    margin-bottom: 32px;
+  }
+
+  .flame2 {
+    width: 75%;
+    margin-left: 0%;
+    transform: rotate(3deg);
+    margin-bottom: 32px;
+  }
+
+  .flame3 {
+    width: 75%;
+    margin-left: 0%;
+    transform: rotate(-1deg);
+    margin-bottom: 32px;
+  }
+
+  #about       { margin-top: 70vh }
+  .about       { width: 59%; border-radius: 5px; margin-left: 29%; margin-bottom: 13% }
+  .about-desc1 { width: 85% }
+  .about-desc2 {
+    transform: rotate(-1deg);
+    margin-left: 8%;
+    margin-bottom: 13%;
+    margin-top: 11vh;
+    width: 84%;
+  }
+}
